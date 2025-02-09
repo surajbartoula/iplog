@@ -10,7 +10,7 @@ public_ip=$(curl -4 -s ifconfig.me)
 echo "$(date): $public_ip" >> ip_log.txt
 
 # Add the changes to git
-git add ip_log.txt
+git add .
 
 # Commit the changes
 git commit -m "Update IP log"
