@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Navigate to the repository where you want to log the IP
-cd /home/sbartoul/
+cd /home/sbartoul/check_ip
 
+public_ip=$(curl -4 -s ifconfig.me)
 # Get the public IP address
-public_ip=$(curl -s ifconfig.me)
 
 # Log the IP address with a timestamp
 echo "$(date): $public_ip" >> ip_log.txt
