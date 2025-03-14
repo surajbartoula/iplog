@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Navigate to the repository where you want to log the IP
-cd /home/sbartoul/check_ip
+cd /home/sbartoul/iplog
 
 public_ip=$(curl -4 -s ifconfig.me)
 # Get the public IP address
